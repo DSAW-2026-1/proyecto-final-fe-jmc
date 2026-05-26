@@ -477,7 +477,7 @@ export default function App() {
             <div className="hero-card">
               <div className="metric-grid">
                 <div><strong>{activeProducts}</strong><span>Productos activos</span></div>
-                <div><strong>{data.stats?.users ?? data.users.length || "--"}</strong><span>Usuarios</span></div>
+                <div><strong>{(data.stats?.users ?? data.users.length) || "--"}</strong><span>Usuarios</span></div>
                 <div><strong>{data.stats?.orders ?? data.orders.length}</strong><span>Órdenes</span></div>
                 <div><strong>{data.stats?.reviews ?? data.reviews.length}</strong><span>Reseñas</span></div>
               </div>
